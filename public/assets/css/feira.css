@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+:root {
+    --main-color: #8B3CF1;
+    --main-color-transparent: rgba(139, 60, 241, 43%);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main {
+    margin: auto;
+    max-width: 330px;
+}
+
+#banner {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#areaLogin {
+    margin: auto;
+    text-align: center;
+}
+
+#areaLogin h1 {
+    font-size: 40px;
+    font-weight: 500;
+
+    text-align: center;
+
+    margin-bottom: 18px;
+}
+
+#areaLogin h1::after {
+    content: '';
+    width: 50%;
+    height: 3px;
+    display: block;
+    margin: auto;
+    background-color: var(--main-color);
+}
+
+#areaLogin a {
+    display: inline-block;
+    width: 100%;
+    padding: 16px 24px;
+
+    background-color: var(--main-color);
+
+    color: #FFF;
+    font-size: 24px;
+    font-weight: bold;
+
+    border: 0;
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    margin-top: 24px;
+}
+
+#areaLogin #faepic {
+    display: block;
+    width: 100%;
+    padding: 16px 24px;
+}
+
+#areaLogin a img {
+    width: 40%;
+}
+
+#withoutAccount {
+    font-size: 12px;
+    color: #555252;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 24px;
+}
+
+#withoutAccount .line-gradient {
+    width: 160px;
+    height: 4px;
+    margin-right: 8px;
+    background: linear-gradient(to right, rgba(0,0,0,0) 0%, var(--main-color) 100%);
+}
+
+#withoutAccount .line-gradient-inverted{
+    width: 160px;
+    height: 4px;
+    margin-left: 8px;
+    background: linear-gradient(to left, rgba(0,0,0,0) 0%, var(--main-color) 100%);
+}

@@ -1,0 +1,649 @@
+* { /* Reset Padrão*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    user-select: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+:root {
+    /* Paleta de Cores*/
+    --roxo1: #462E6A;
+    --roxo2: #8B3CF1;
+    --roxo3: #CCD2E9;
+    --roxo4: #150E27;
+    --cinza: #7D7987;
+    --preto: #000;
+    --branco: #fff;
+    /* Cores do Gradiente*/
+    --cor1: #B278FC;
+    --cor2: #6F00FF;
+}
+
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-image: url(../images/panela/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center left;
+   width: 100vw;
+    min-height: 95vh;
+    padding: 25px;
+    margin-bottom: 120px;
+}
+
+
+
+header img {
+    position: absolute;
+    left: 10px;
+    width: 550px;
+    margin-top: -24px;
+}
+
+
+.texto-sobre {
+    position: absolute;
+    z-index: 1;
+    left: 60px;
+    top: 250px;
+    display: flex;
+    flex-direction: column;
+    max-width: 545px;
+    
+    line-height: 1.9em;
+    gap: 1.5em;
+}
+
+.texto-sobre p, h1 {
+    font-size: 1.7rem;
+    color: var(--branco);
+}
+
+.texto-sobre h1 {
+    color: var(--branco);
+}
+
+.texto-sobre p {
+    color: var(--branco);
+    text-shadow: 3px 3px 5px black;
+}
+
+.texto-sobre button {
+    position: relative;
+    z-index: 1;
+    width: 150px;
+    padding: 14px;
+    border-color: var(--roxo2);
+    background-color: var(--branco);
+    color: var(--roxo2);
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.texto-sobre button a {
+    text-decoration: none;
+    color: var(--roxo2);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.texto-sobre button:hover {
+    background-color: var(--roxo2);
+    transition: 0.4s;
+    cursor: pointer;
+    color: var(--branco);
+}
+
+.texto-sobre button:hover a {
+    color: var(--branco);
+}
+
+.tipos-impressao {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.tipos-impressao .impressao img {
+    margin-bottom: -13px;
+    width: 120px;
+}
+
+
+.tipos-impressora > h2 {
+    text-align: center;
+}
+
+.tipos-impressao > h1 {
+    color: var(--roxo2);
+    margin-bottom: 10px;
+}
+
+.tipos-impressao > h2 {
+    color: var(--roxo3);
+}
+
+.tipos-impressao > a > button {
+    position: relative;
+    z-index: 1;
+    width: 150px;
+    padding: 14px;
+    margin-top: 120px;
+    border-color: var(--roxo2);
+    background-color: var(--branco);
+    color: var(--cor2);
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.tipos-impressao > a > button:hover {
+    background-color: var(--roxo2);
+    transition: 0.4s;
+    cursor: pointer;
+    color: var(--branco);
+}
+
+.tipos-impressao img {
+    width: 300px;
+}
+
+.tipos-impressao .container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 60px;
+}
+
+.tipos-impressao  img[alt="flor"] {
+    width: 950px;
+    position: absolute;
+    z-index: 0;
+    left: 0%;
+    bottom: -140%;
+}
+
+
+.tipos-impressora img[alt="flor"] {
+   position: absolute;
+   right: 0%;
+   bottom: -300%;
+   width: 540px;
+}
+
+.tipos-impressao .container1 .impressao h1 {
+    color: var(--cor2);
+}
+
+.tipos-impressao .container1 .impressao ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: start;
+    position: relative;
+}
+
+.tipos-impressao .container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 60px;
+}
+
+.tipos-impressao .container1 .impressao {
+    position: relative;
+    z-index: 1;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+     max-width: 350px;
+    height: 480px;
+    border-radius: 15px;
+     /* background-color: rgb(250, 247, 247);  */
+    border: solid 1.2px var(--roxo2);
+    padding: 40px;
+}
+
+.tipos-impressao .container2 .impressao {
+    position: relative;
+    z-index: 1;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 350px;
+    height: 480px;
+    border-radius: 15px;
+     /* background-color: rgb(250, 247, 247);  */
+    border: solid 1.2px var(--roxo2);
+    padding: 40px;
+}
+
+.tipos-impressao .container2 .impressao h1 {
+    color: var(--cor2);
+}
+
+.tipos-impressao .container2 .impressao ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: start;
+}
+
+.tipos-impressao li {
+    font-size: 1.1rem;
+}
+
+
+.tipos-impressora > h2 {
+    color: var(--roxo3);
+}
+
+.tipos-impressora hr {
+    position: relative;
+    z-index: 1;
+    width: 40px;
+    height: 4px;
+    border-color: #36972F;
+    background-color: #36972F;
+    border-radius: 10px;
+    border: none;
+}
+
+.impressora1 {
+    position: relative;
+    z-index: 1;
+    margin: 70px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+}
+
+.impressora1 img {
+    width: 350px;
+}
+
+
+.texto-impressora1 {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+    width: 450px;
+    gap: 2rem;
+}
+
+.texto-impressora1 > h1 {
+    color: var(--roxo2);
+}
+
+.texto-impressora1 > p {
+    font-size: 1.2rem;
+}
+
+.texto-impressora1 > h2 {
+    color: var(--cinza);
+}
+
+.texto-impressora2 > h1 {
+    color: var(--roxo2);
+}
+
+.texto-impressora2 > p {
+    font-size: 1.2rem;
+}
+
+.texto-impressora2 > h2 {
+    color: var(--cinza);
+}
+
+.texto-impressora3 > h1 {
+    color: var(--roxo2);
+}
+
+.texto-impressora3 > p {
+    font-size: 1.2rem;
+}
+
+.texto-impressora3 > h2 {
+    color: var(--cinza);
+}
+
+.impressora2 {
+    position: relative;
+    z-index: 1;
+    margin: 200px auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+}
+
+.impressora2 img {
+    position: relative;
+    z-index: 1;
+    width: 350px;
+}
+
+
+.texto-impressora2 {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    margin-left: 200px;
+    gap: 2rem;
+}
+
+.impressora3 {
+    position: relative;
+    z-index: 1;
+    margin: 70px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+}
+
+.impressora3 img {
+    width: 350px;
+}
+
+
+.texto-impressora3 {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: -200px;
+    width: 450px;
+    gap: 2rem;
+}
+
+.secal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-container {
+    position: relative;
+    width: 65%;
+    max-width: 800px;
+    height: 460px;
+    overflow: hidden;
+    background-color: var(--cor2);
+    color: var(--branco);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 22px;
+    margin-bottom: 240px;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+
+.carousel-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.carousel-item > p {
+    font-size: 1.2rem;
+}
+
+.carousel h2 {
+    margin-top: 0;
+}
+
+.carousel-container ul {
+    margin:  20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style-type: none;
+    padding: 0;
+}
+
+.carousel-container ul li {
+    cursor: pointer;
+    width: 300px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 5px;
+    color: var(--preto);
+}
+
+.answer {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.carousel-container .setas {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.carousel-container button.prev {
+    width: 40px;
+    left: 10px;
+}
+
+.carousel-container button.next {
+    width: 40px;
+    right: 10px;
+}
+
+.carousel-container .setas:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-item ul .correto:focus {
+    background-color: green;
+}
+
+.carousel-container #resetar {
+    padding: 5px;
+    background-color: var(--preto);
+    color: var(--branco);
+    font-size: 1.4rem;
+    margin-top: 13px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--roxo4);
+    padding: 60px;
+    color: var(--branco);
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+}
+
+footer .links p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+footer h1 {
+    font-size: 1.3rem;
+}
+
+footer img {
+    width: 400px;
+}
+
+.contador-pontos {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.contador-pontos #resultado{
+    color: var(--branco);
+    font-size: 2rem;
+}           
+
+@media screen and (width < 1230px) {
+
+
+    header {
+        background-position: center left;
+        min-height: 95vh;
+    }
+
+    .texto-sobre h1 {
+        text-align: left;
+    }
+
+    .tipos-impressao .container1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tipos-impressora img[alt="flor"] {
+        width: 900px;
+        bottom: -350%;
+    }
+
+    .tipos-impressao .container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tipos-impressora .impressora1, .impressora2, .impressora3 {
+        flex-direction: column;
+    }
+
+    .tipos-impressora div h1 {
+        text-align: center;
+    }
+
+    .tipos-impressora div hr {
+        margin: auto;
+    }
+
+    .tipos-impressora .texto-impressora1, .texto-impressora2, .texto-impressora3 {
+        margin: auto;
+    }
+
+    footer {
+        flex-direction: column;
+         justify-content: center;
+        align-items: center;
+    }
+
+    footer div {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .carousel-container {
+        height: 500px;
+    }
+    
+   
+
+    .carousel-container button.prev {
+        width: 40px;
+        left: 10px;
+    }
+    
+    .carousel-container button.next {
+        width: 40px;
+        right: 10px;
+    }
+}
+
+@media screen and (width < 645px) {
+
+    header {
+        background-position: center right;
+    }
+
+    header img {
+        width: 400px;
+    }   
+
+    .texto-sobre p {
+        font-size: 1.2rem;
+    }
+
+    .texto-sobre {
+        left: 40px;
+        max-width: 500px;
+    }
+
+    .carousel-container {
+        width: 425px;
+        height: 520px;
+    }
+
+    .carousel-container button.prev {
+        width: 40px;
+        left: 10px;
+    }
+    
+    .carousel-container button.next {
+        width: 40px;
+        right: 10px;
+    }
+
+    .tipos-impressao > h2 {
+       width: 350px;
+       margin: auto;
+    }
+
+}

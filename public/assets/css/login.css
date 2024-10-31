@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+:root {
+    --main-color: #8B3CF1;
+    --main-color-transparent: rgba(139, 60, 241, 43%);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main {
+    margin: auto;
+    max-width: 330px;
+}
+
+main img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#areaLogin {
+    margin: auto;
+    text-align: center;
+}
+
+#areaLogin h1 {
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+#areaLogin form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#areaLogin form input[type=text],
+#areaLogin form input[type=password] {
+    width: 100%;
+    padding: 16px 24px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #635C5C;
+    font-size: 16px;
+    font-family: 'Outfit', sans-serif;
+}
+
+#areaLogin form input[type=text]:focus,
+#areaLogin form input[type=password]:focus {
+    border: 1px solid var(--main-color);
+    outline: none;
+}
+
+#areaLogin form input[type=text]::placeholder,
+#areaLogin form input[type=password]::placeholder{
+    color: #635C5C;
+    font-size: 16px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: medium;
+}
+
+#areaLogin form input[type=submit],
+#areaLogin a {
+    display: inline-block;
+    width: 100%;
+    padding: 16px 24px;
+
+    background-color: var(--main-color);
+
+    color: #FFF;
+    font-size: 24px;
+    font-weight: bold;
+
+    border: 0;
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    margin-top: 16px;
+}
+
+#areaLogin a {
+    margin-top: 24px;
+}
+
+#withoutAccount {
+    font-size: 12px;
+    color: #555252;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 24px;
+}
+
+#withoutAccount .line-gradient {
+    width: 80px;
+    height: 4px;
+    margin-right: 8px;
+    background: linear-gradient(to right, rgba(0,0,0,0) 0%, var(--main-color) 100%);
+}
+
+#withoutAccount .line-gradient-inverted{
+    width: 80px;
+    height: 4px;
+    margin-left: 8px;
+    background: linear-gradient(to left, rgba(0,0,0,0) 0%, var(--main-color) 100%);
+}
+
+#header {
+    display: flex;
+}
+
+#header a {
+    display: inline-block;
+}

@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+:root {
+    --main-color: #8B3CF1;
+    --main-color-transparent: rgba(139, 60, 241, 43%);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main {
+    margin: 32px auto;
+    max-width: 330px;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+}
+
+header #classArea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header #classArea #classAreaName {
+    margin-left: 12px;
+
+    font-size: 18px;
+    color: var(--main-color);
+}
+
+#photos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+#photos .photoAreaA {
+    width: 100%;
+}
+
+.photoAreaA .photoArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.photoAreaA .photoArea-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 200px;
+}
+
+.photoArea img {
+    width: 100%;
+    max-height: 100%;
+
+    border-radius: 5px;
+}
+
+.photoArea .photoUserName {
+    margin-top: 8px;
+    
+    color: var(--main-color);
+    font-size: 14px;
+    font-weight: medium;
+}
+
+.photoArea .photoClass {
+    margin-top: 4px;
+    
+    color: #888;
+    font-size: 12px;
+    font-weight: medium;
+}
+
+.photoArea .photoDesc {
+    margin-top: 4px;
+    
+    color: #000;
+    font-size: 14px;
+    font-weight: medium;
+
+    max-width: 165px;
+
+    overflow-wrap: break-word;
+}
+
+.photoButtons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.photoButtons .acceptButton {
+    background-color: #28a745;
+    padding: 6px 12px;
+    border: 0;
+    border-radius: 4px;
+
+    color: #FFF;
+}
+
+.photoButtons .rejectButton {
+    width: 50%;
+    background-color: #dc3545;
+    padding: 6px 12px;
+    border: 0;
+    border-radius: 4px;
+
+    color: #FFF;
+}

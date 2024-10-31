@@ -1,0 +1,699 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --c01: #fff;
+    --c02: #000;
+    --c03: #4E3FE1;
+    --c04: #7442E1;
+    --c05: #A677E1;
+    --c06: #00000050;
+    --c07: #F7F1FF;
+    --c08: #312A72;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: "Poppins", sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    
+}
+
+#div-morta{
+    margin-bottom: 20px;
+}
+
+header,
+.nav-header,
+ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--c03);
+    
+}
+
+
+header {
+    margin-top: 2%;
+}
+
+ul {
+    gap: 2em;
+}
+
+
+button {
+    border: 0;
+}
+
+#botao-roxo {
+    background-color: var(--c03);
+    color: var(--c01);
+    padding: 0.5em 3em 0.5em 3em;
+    border-radius: 17px;
+    transition: 0.5s ease;
+    margin-right: 7%;
+    
+}
+
+#botao-roxo:hover, #botao-branco:hover{
+    
+    background-color: var(--c08);
+    color: var(--c01);
+}
+
+
+#botao-branco {
+    transition: 0.5s ease;
+    background-color: var(--c01);
+    color: var(--c03);
+    padding: 0.5em 2.8em 0.5em 2.8em;
+    border-radius: 17px;
+    margin-top: 3%;
+    font-weight: 500;
+    
+}
+
+
+main img {
+    width: 450px;
+    height: 500PX;
+    object-fit: contain;
+    /* border: 2px solid; */
+}
+
+.texto {
+    height: 500px;
+    width: 50%;
+    align-items: center;
+    color: var(--c01);
+    font-weight: 300;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: first baseline;
+    
+    
+}
+
+main {
+    background-image: url(../images/apparatus/fundo-main.png);
+    height: 500px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    margin-top: 2%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+#img2{
+    display: none;
+}
+
+#logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* margin-left: 2%; */
+    margin-left: 3%;
+    
+}
+
+
+
+#logo img {
+
+    width: 150px;
+    object-fit: contain;
+}
+
+
+#cards-sections {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid;
+    justify-content: center;
+}
+
+#logo h2 {
+    margin-left: -30%;
+}
+h1{
+    margin-bottom: 2%;
+}
+#cards-sections h2 {
+
+    text-align: center;
+    margin-top: 1%;
+    border: 2px solid;
+}
+
+h3{
+    color: var(--c04);
+    margin-bottom: 2%;
+}
+
+#sec-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-left: 30px; */
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+.card {
+    color: var(--c03);
+
+  
+    border: 1px solid #A677E1;
+    
+    margin-top: 5%;
+    border-radius: 10px;
+    width: 20%;
+
+
+    padding: 45px;
+    text-align: justify;
+    
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease;
+
+}
+
+
+
+.card:hover {
+    background-color: var(--c04);
+    border: 1px solid var(--c01);
+    color: white;
+    cursor: pointer;
+}
+
+.card:hover h2{
+    color: white;
+}
+
+#divImg img {
+    border-radius: 10px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    
+}
+
+#divImg {
+    width: 1180px;
+    height: 400px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.089);
+    border-radius: 10px;
+    margin-top: 10%;
+   
+}
+
+#div-texto {
+    width: 80%;
+    height: 300px;
+    border-radius: 10px;
+    border: 1px solid var(--c05);
+    
+    text-align: justify;
+}
+
+#fundo-roxo {
+  
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+}
+
+#fundo-roxo h2{
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+#secoes {
+    width: 85%;
+}
+
+.direita {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    text-align: end;
+    background-color: var(--c01);
+    border-radius: 15px ;
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.089);
+    
+}
+
+.esquerda {
+    border-radius: 15px ;
+    background-color: var(--c01);
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.089);
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: end;
+    
+}
+
+.esquerda p {
+    width: 70%;
+}
+
+.direita p {
+    width: 70%;
+    text-align: left;
+}
+
+.secao {
+    margin-bottom: 60px;
+}
+
+.secao img {
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+
+
+.texto-section {
+    display: flex;
+    justify-content: center;
+    text-align: end;
+    flex-direction: column;
+    align-items: center;
+}
+
+.direita .texto-section p, .direita .texto-section h3 {
+    text-align: end;
+    width: 70%;
+}
+
+.esquerda .texto-section p,  .esquerda .texto-section h3  {
+    text-align: start;
+    width: 70%;
+}
+
+h2 {
+    color: var(--c04);
+    text-align: center;
+    width: 100%;
+}
+
+footer{
+    background-color: var(--c08);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--c01);
+    padding: 1rem 0 1rem 0 ;
+}
+
+.loginho{
+    background-color: gray;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+footer #logo, #info, .socials{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
+
+
+footer ul, footer p{
+    color: var( --c01);   
+}
+
+.icones-cards{
+    width: 90px;
+    width: 90px;
+    object-fit: contain;
+    margin-right: 5%;
+    margin-bottom: 10%;
+}
+
+.textos-cards h2{
+    text-align: left;
+    margin-bottom: 2%;
+}
+
+footer #logo img{
+    width: 200px;
+}
+
+@media (max-width: 1200px){
+    
+    header{ 
+        height: 50px;
+    }
+    .conteudo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+    #logo{
+       
+        /* border: 2px solid; */
+        margin-left: -150px;
+    }
+    
+    #logo h2 {
+        /* border: 2px solid; */
+        
+        
+        width: fit-content;
+    }
+    #logo img{
+        margin: 0;
+        height: 150px;
+    }
+    
+    main{
+        background-color: var(--c04);
+        height: 550px;
+    }   
+    main p {
+        margin-left: 5%;
+      
+    }
+    
+    
+    #img1{
+        display: none;
+    }
+    #img2{
+        display: block;
+    }
+    
+    #botao-branco{
+        margin-top: 5% auto;
+    }
+    #botao-roxo{
+        margin-right: 10px;
+
+        /* margin: 5% auto; */
+        
+    }
+
+    #logo img{
+        width: 400px;
+        object-fit: contain;
+        
+    }
+
+    .cards{
+    justify-content: center;
+    align-items: center;
+     flex-direction: column;
+    }
+
+    #card-1, #card-2, #card-3{
+        width: 50%;
+    }
+
+    #divImg{
+        width: 780px;
+    }
+
+    .secao  {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+
+    .secao img {
+        width: 400px;
+    }
+
+    
+
+    .card img {
+        margin: 0px 0px 10px 0px;
+    }
+
+    .card h2 {
+        text-align: center;
+
+    }
+
+    .secao .texto-section h3 {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+
+    .secao .texto-section p {
+        text-align: justify ;
+        width: 70%;
+        font-size: 0.9em;
+    }
+
+     /* .direita .texto-section p, .esquerda .texto-section p {
+        text-align: justify;
+    } */
+    
+
+    
+    .esquerda p {
+        text-align: justify;
+    }
+    
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    #info {
+        margin-bottom: 40px;
+    }
+    
+    
+}
+
+@media (max-width: 850px){
+    header{
+        display: flex;
+        justify-content: space-between;
+        height: 60px;
+    
+    }
+
+    #botao-branco {
+        margin-bottom: 40px;
+    }
+    
+    
+    main{
+        display: flex;
+        height: 800px;
+        text-align: center;
+        padding: 15% 0 15% 0 ;
+        text-align: left ;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .texto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    main h1 {    
+        display: block;
+        text-align: center;
+        
+    }
+    
+    main p {
+        text-align: center;
+    }
+    
+    
+    #img1{
+        display: none;
+    }
+    #img2{
+        display: block;
+        
+    }
+    #divImg {
+        width: 480px;
+    }
+    
+    #card-1, #card-2, #card-3 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #logo {
+       margin: 0 auto;
+    }
+}
+
+@media (max-width: 700px) {
+    header {
+        height: 100px;
+        display: flex;
+        align-items: center;
+        margin: 0 ;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        height: 680px;
+    }
+    #logo img{
+        height: 300px;
+        width: 200px;
+    }
+    #logo{
+        margin: -5%;
+    }
+    
+    #logo h2{
+        display: none;
+    }
+    main h1 {
+        font-size: 25px;
+    }
+    
+    main img {
+        width: 300px;
+    }
+    
+    #divImg {
+        width: 380px;
+    }
+    
+    
+    
+    
+}
+
+@media (max-width: 500px) {
+    
+    #titulo-material {
+        margin-bottom: 30px;
+    }
+    
+    
+    main{
+        padding-top: 30%;
+    }
+    
+    .texto h1, .texto p{
+        width: 450px;
+        
+    }
+
+    #botao-branco {
+        margin-top: 14%;
+        margin-bottom: 40px;
+    }
+
+    .conteudo {
+        margin: 0;
+    }
+
+    #sec-cards, #fundo-roxo{
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .texto h1, .texto p {
+        width: 330px;
+        text-align: center;
+    }
+
+    main {
+        padding-bottom: 20%;
+    }
+
+    main img {
+        width: 300px;
+    }
+
+
+    .secao img {
+        width: 300px;
+    }
+
+    .secao  .texto-section p {
+        width: 300px;
+    }
+
+
+    #info p {
+        display: none;
+    }
+
+    main h1 {
+        width: 50%;
+    }
+
+    main p {
+        width: 50%;
+    }
+
+    #textomudando,#divImg {
+        width: 300px;
+    }
+
+
+}
+

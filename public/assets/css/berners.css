@@ -1,0 +1,375 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    color: var(--cor-9);
+}
+
+a{
+    text-decoration: none;
+}
+
+
+:root{
+    --cor-1: #000;
+    --cor-2:#fff;
+    --cor-3:#0554F2;
+    --cor-4:#0442BF;
+    --cor-5:#03318C;
+    --cor-6:#021F59;
+    --cor-7:#0D0D0D;
+    --cor-8:#A0A0A0;
+    --cor-9:#626262;
+    --cor-10:#0532E5;
+    --span:#2E4BBE;
+    --footer:#234089;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 87%;
+    padding: 20px 8%;
+    margin: auto;
+    color: var(--cor-8);
+}
+
+figure {
+width: 3rem;
+}
+
+header > figure > img{
+    width: 3rem;
+}
+
+ul{
+    display: flex;
+    gap: 2rem;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 87%;
+    height: 800px;
+    margin: auto;
+    margin-left: 8rem;
+    gap: 30px;
+}
+
+
+ h1, h2{
+    font-size: 2.5em ;
+ }
+main > .texto-banner > p{
+    color: var(--cor-9);
+}
+
+.iframe{
+    width: 542px;
+    height: 300px;
+}
+
+main > .iframe > .frame{
+    width: 30rem;
+    height: 100%;
+}
+
+span{
+    color: var(--span);
+}
+
+.iframe {
+    width: 50%;
+    height: 100vh; /* ou a altura desejada */
+
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+}
+
+.iframe iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    background-color: white;
+}
+
+button{
+    background-color: var(--cor-3);
+    outline: none;
+    border-radius:  1.5rem;
+    padding: 13px;
+    width: 175px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+button > a{
+    color: var(--cor-2);
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+}
+
+section > .separacao > figure{
+    width: 40%;
+}
+section > .separacao > figure > img{
+    width: 100%;
+}
+
+ section > .separacao > .texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.separacao{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content:space-around;
+    align-items: center;
+    margin: 50px auto;
+}
+
+.section-1 > .fundo-azul-1{
+    height: 350px;
+    width: 20%;
+    height: 100%;
+    background-color: var(--cor-10);
+    position: absolute;
+    border-radius: 0px 15px 15px 0px;
+    margin: 0;
+    z-index: 1;
+}
+
+.imagens-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative; /* Para que possamos ajustar a sobreposição em relação ao fundo-azul */
+    z-index: 2; /* Um valor mais alto para garantir que a imagens-grid fique acima do fundo azul */
+    margin-left: 10%; /* Ajuste para posicionar as imagens-grid à frente do fundo azul */
+    gap: 1rem;
+
+}
+
+ .imagens-grid > figure{
+    width: 60%;
+}
+
+.imagens-grid >.imagem-01{
+    width: 80% ;
+}
+
+
+.imagens-grid > figure > img{
+    width: 100%;
+}
+
+
+.card {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.texto{
+    gap: 1rem;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 220px;
+    height: 70px;
+    max-width: 100%;
+    background-color: var(--cor-3);
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+.card > .if-2{
+    width: 180px;
+}
+.section-3 > .separacao{
+    background-color: var(--cor-3);
+    padding: 20px;
+    border-radius: 20px;
+    height: 400px;
+    width: 80%;
+}
+
+.section-3 > .separacao > figure > img{
+    width: 15rem;
+}
+.section-3 > .separacao > .texto > h2,p{
+    color: var(--cor-2);
+}
+
+section > .separacao > .texto > .card > .info{
+    gap: 1rem;
+}
+
+    section > .separacao > .texto > .card > .info > img{
+    width: 2rem;
+}
+
+
+
+.section-3 > .separacao > .texto > .card > .info > p{
+    color: var(--cor-3);
+}
+
+.separacao > .texto > p{
+    color: var(--cor-9);
+}
+
+.section-3 > .separacao > .texto > p{
+    color: var(--cor-2);
+}
+
+
+.info-branco{
+    background-color: var(--cor-2);
+
+}
+
+
+footer{
+    color: var(--footer);
+    height: 50px;
+    padding: 25px;
+    border-top: 0.5px solid var(--cor-9);
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+
+
+footer > nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 87%;
+    margin: auto;
+    
+}
+
+footer > nav > a{
+    color: var(--cor-1);
+}
+
+footer > nav > ul > li{
+    color: var(--cor-1);
+}
+
+.animacao{
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+    transform: translateX(-100%);
+}
+
+.lado{
+    transform: translateX(100%);
+}
+.mudanca{
+    opacity: 1;
+    filter: blur(0);
+    transition: all 1s;
+    transform: translateX(0);
+}
+
+
+@media screen and (max-width: 1170px){
+    nav{
+        display: block;
+    }
+}
+
+#interacao{
+    max-width: 100%;
+}
+
+@media screen and (orientation:portrait){
+    
+    header{
+        flex-direction: column;
+    }
+
+    ul{
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    .texto-banner{
+        text-align: center;
+    }
+    main{
+        flex-direction: column;
+        margin: auto;
+        margin-bottom: 100px;
+    }
+
+    .section-1 {
+        font-size: 85%;
+    }
+    .section-1 > .separacao{
+        padding: 20px;
+    }
+
+    .section-3{
+        font-size: 70%;
+    }
+
+    .section-3 > .separacao{
+        width: 90%;
+        padding: 20px;
+    }
+
+    #coracao{
+        max-width: 100%;
+        min-width: 130px;
+    }
+    .texto-3{
+        padding: 20px;
+    }
+
+    footer{
+        visibility: hidden;
+    }
+}
